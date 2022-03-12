@@ -1,0 +1,25 @@
+
+.welcomeScreenBody{
+    background: rgb(48,70,234);
+    background: linear-gradient(156deg, rgba(48,70,234,1) 1%, rgba(11,24,112,1) 100%);
+    background-repeat: no-repeat;
+    width: 376px;
+    height: 705px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-size: 376px 250px;
+}
+
+.container{
+    overflow-y: scroll;
+    width: 366px;
+    height: 705px;
+    margin-left: 10px;
+}
+
+.headliner{
+    width: calc(100% - 10px);
+    height: 200px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
