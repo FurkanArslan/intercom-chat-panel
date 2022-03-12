@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import './style.css'
-export default class ContinueConversation extends Component {
+export default class StartConversationBox extends Component {
     render() {
         return (
-            <div className='continueConvBox'>
+            <div className='startConvBox'>
                 <div className='continueHeader'>
-                    <h3>Continue the conversation</h3>
+                    <h3> Start another conversation</h3>
 
                 </div>
                 <div className='goToConversation'>
@@ -14,11 +14,16 @@ export default class ContinueConversation extends Component {
                             <img src="./operator.png" width="36px"></img>
                         </div>
                         <div className='goToConvText'>
-                            <div className='goToConversationTextFirst'>Operator • 1d ago</div>
-                            <div className='goToConversationTextSecond'>Hi there 👋 What brings y...</div>
+                            <div className='goToConversationTextFirst'>Our usual reply time</div>
+                            <div className='goToConversationTextSecond'>A few minutes</div>
                         </div>
 
+
                     </div>
+
+                </div>
+                <div className='messageField'>
+                    <button className='sendMessageButton'>Send us a message</button>
                 </div>
             </div>
         )

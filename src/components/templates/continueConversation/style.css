@@ -23,31 +23,3 @@
     border-radius: 10px;
     margin-top: 15px;
 }
-
-.imageRow{
-    width: calc(100% - 40px);
-    height: 48px;
-    margin-left: 30px;
-    display: flex;
-}
-
-.hiRow{
-    color: white;
-    width: calc(100% - 40px);
-    height: 48px;
-    margin-left: 30px;
-    display: flex;
-}
-
-.descRow{
-    text-align: left;
-    display: flex;
-    color: white;
-    width: calc(100% - 40px);
-    height: 48px;
-    margin-left: 30px;
-    font-size: 1em;
-    line-height: 1.5em;
-    overflow-wrap: break-word;
-    white-space: pre-line;
-}
