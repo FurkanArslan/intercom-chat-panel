@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import './style.css'
 import ContinueConversation from '../../molecules/boxes/continueBox'
 import StartConversationBox from '../../molecules/boxes/satartConvBox'
-export default function Welcome() {
+export default function WelcomePage({ goToPage }) {
+
     return (
         <div className='welcomeScreenBody'>
             <div className='container'>
@@ -19,8 +20,8 @@ export default function Welcome() {
                         </h3>
                     </div>
                 </div>
-                <ContinueConversation />
-                <StartConversationBox />
+                <ContinueConversation onClick={() => { goToPage("ContinueConversation") }} />
+                <StartConversationBox onClick={() => { goToPage("StartConversation") }} />
                 <ContinueConversation />
                 <ContinueConversation />
             </div>

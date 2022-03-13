@@ -1,5 +1,5 @@
 
-.welcomeScreenBody{
+.ccScreenBody{
     background: rgb(48,70,234);
     background: linear-gradient(156deg, rgba(48,70,234,1) 1%, rgba(11,24,112,1) 100%);
     background-repeat: no-repeat;
@@ -7,19 +7,79 @@
     height: 705px;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-size: 376px 250px;
+    background-size: 376px 100px;
+}
+.ccHeader{
+    width: 100%;
+    height: 101px;
+    display: flex;
 }
 
-.container{
+.ccContainer{
     overflow-y: scroll;
     width: 366px;
-    height: 705px;
+    height: 604px;
     margin-left: 10px;
 }
 
-.headliner{
-    width: calc(100% - 10px);
-    height: 200px;
-    border-radius: 10px;
-    margin-top: 15px;
+.goBackButton{
+    display: flex;
+    color: white;
+    width: 50px;
+    height: 50px;
+    margin-top: 24px;
+    margin-left: 12px;
+}
+.goBackButton:hover{
+    display: flex;
+    color: white;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    margin-top: 24px;
+    margin-left: 12px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.4)
+}
+.ccBackImage{
+    margin: 10px;
+    transform: rotate(90deg);
+}
+
+.headerText{
+    font-family: sans-serif;
+    width: calc(100% - 100px);
+    height: 51px;
+    margin-top: 24px;
+    margin-left: 12px;
+    display: flex;
+}
+.headerText:hover{
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.2)
+}
+.ccTextContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 51px;
+    margin-left: 5px;
+}
+
+.ccOperator{
+    margin-top: 9px;
+    color : white;
+    text-align: left;
+    width: 200px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.ccBot{
+    margin-bottom: 9px;
+    color :rgba(255, 255, 255, 0.7);
+    text-align: left;
+    width: 200px;
+    line-height: 15px;
+    height: 15px;
 }

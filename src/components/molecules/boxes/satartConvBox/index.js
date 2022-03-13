@@ -1,31 +1,27 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './style.css'
-export default class StartConversationBox extends Component {
-    render() {
-        return (
-            <div className='startConvBox'>
-                <div className='continueHeader'>
-                    <h3> Start another conversation</h3>
+export default function StartConversationBox({ onClick }) {
 
-                </div>
-                <div className='goToConversation'>
-                    <div className='goToConversationContainer'>
-                        <div className='goToConvOperator'>
-                            <img src="./operator.png" width="36px"></img>
-                        </div>
-                        <div className='goToConvText'>
-                            <div className='goToConversationTextFirst'>Our usual reply time</div>
-                            <div className='goToConversationTextSecond'>A few minutes</div>
-                        </div>
-
-
+    return (
+        <div className='startConvBox' >
+            <div className='continueHeader'>
+                <h3> Start another conversation</h3>
+            </div>
+            <div className='goToConversation'>
+                <div className='goToConversationContainer'>
+                    <div className='goToConvOperator'>
+                        <img src="./operator.png" width="36px"></img>
                     </div>
-
-                </div>
-                <div className='messageField'>
-                    <button className='sendMessageButton'>Send us a message</button>
+                    <div className='goToConvText'>
+                        <div className='goToConversationTextFirst'>Our usual reply time</div>
+                        <div className='goToConversationTextSecond'>A few minutes</div>
+                    </div>
                 </div>
             </div>
-        )
-    }
+            <div className='messageField'>
+                <button className='sendMessageButton' onClick={() => { onClick(true) }}>Send us a message</button>
+            </div>
+        </div>
+    )
+
 }
