@@ -1,0 +1,47 @@
+
+.newsBox{
+    background-color: white;
+    border-top: 2px solid #96A2F5;
+    width: calc(100% - 10px);
+    height: 407px;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.newsHead{
+    width: auto;
+    margin: 20px;
+}
+
+.newsHeadline{
+    width: 100%;
+    text-align: left;
+    font-family: intercom-font, "Helvetica Neue", "Apple Color Emoji", Helvetica, Arial, sans-serif;
+}
+
+.newsDetail{
+    border-top: 1px solid #EFEEEF;
+    width: 100%;
+    text-align: left;
+    font-family: intercom-font, "Helvetica Neue", "Apple Color Emoji", Helvetica, Arial, sans-serif;
+}
+
+.newsTextHolder{
+    width: auto;
+    margin: 20px;
+}
+
+.newsDetail:hover {
+    background-color: #f3f1f3;
+}
+
+.newsDetailHeadLine {
+    font-size: 14px;
+    color: rgb(48, 71, 236);
+}
+
+.newsDetailContent{
+    font-size: 14px;
+    color: rgb(115, 115, 118);
+}

@@ -1,6 +1,6 @@
 import React from 'react'
 import './style.css'
-export default function ContinueConversation({ onClick }) {
+export default function ContinueConversationBox({ onClick }) {
     return (
         <div className='continueConvBox'>
             <div className='continueHeader'>

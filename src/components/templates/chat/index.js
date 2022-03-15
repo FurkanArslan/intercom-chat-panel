@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './style.css'
 import WelcomePage from '../welcome'
 import ContinueConversationPage from '../continueConversation/index';
+import StartConversationPage from '../startConversation/index'
 export default function Chat() {
     const [showingPage, setShowingPage] = useState("");
     return (
@@ -11,6 +12,9 @@ export default function Chat() {
             }
             {
                 (showingPage === "ContinueConversation") && (<ContinueConversationPage goBack={() => { setShowingPage("") }} />)
+            }
+            {
+                (showingPage === "StartConversation") && (<StartConversationPage goBack={() => { setShowingPage("") }} />)
             }
         </div>
     )

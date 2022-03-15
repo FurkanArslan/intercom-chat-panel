@@ -1,44 +1,10 @@
 import React, { useState } from 'react'
 import './style.css'
 
-const defaultMessages = [
-    {
-        id: 0,
-        type: 0,
-        message: "Hi there 👋\
-        What brings you to Intercom today?"
-    },
-    {
-        id: 1,
-        type: 1,
-        message: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when"
-    },
-    {
-        id: 2,
-        type: 0,
-        message: "an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also"
-    },
-    {
-        id: 3,
-        type: 1,
-        message: "the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets "
-    },
-    {
-        id: 4,
-        type: 0,
-        message: "Hcontaining Lorem Ipsum passages, and more recently with desktop"
-    },
-    {
-        id: 5,
-        type: 1,
-        message: "publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-    },
-]
-
-
-export default function ContinueConversationPage({ goBack }) {
+export default function StartConversationPage({ goBack }) {
+    const defaultOperatorMessage = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
     const [userMessage, setUserMessage] = useState();
-    const [messageList, setMessageList] = useState(defaultMessages);
+    const [messageList, setMessageList] = useState([]);
 
 
     const sendNewMessage = () => {
@@ -48,29 +14,44 @@ export default function ContinueConversationPage({ goBack }) {
             message: userMessage
         };
         tempList.push(newMessage);
+        tempList.push({ type: 0, message: defaultOperatorMessage });
         setMessageList(tempList);
         setUserMessage("")
     }
 
     return (
-        <div className='ccScreenBody'>
-            <div className='ccHeader'>
-                <div className='goBackButton' onClick={() => { goBack() }}>
-                    <img className='ccBackImage' src="./arrow.png" width="20px" height="20px" />
+        <div className='scScreenBody'>
+            <div className='scHeader'>
+                <div className='scGoBackButton' onClick={() => { goBack() }}>
+                    <img className='scBackImage' src="./arrow.png" width="20px" height="20px" />
                 </div>
-                <div className='headerText'>
-                    <img src="./operator.png" width="50px" height="50px" />
-                    <div className='ccTextContainer'>
-                        <div className='ccOperator'>
-                            Operator
-                        </div>
-                        <div className='ccBot'>
-                            Bot
+                <div className='scHeaderText'>
+                    <div className='scIntercom'>
+                        Intercom
+                    </div>
+                    <div className='scDescription'>
+                        We help your business grow by connecting you to your customers.
+                    </div>
+                    <div className='replyTimeContainer'>
+                        <div class="intercom-6lpybd e1v1uqwk0">
+                            <div class="intercom-h9ic2e e1v1uqwk1">
+                                <div class="intercom-79elbk eftbqer0">
+                                    <div size="56" class="intercom-1kzqrg5 evxuo3e0">
+                                        <img src="https://static.intercomassets.com/avatars/4448521/square_128/IMG_5248-1604679761.jpg?1604679761" alt="Eden profile" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='scInnerHeaderText'>
+                                <div className='scDescription'>
+                                    <div style={{ width: 150 }}>Our usual reply time</div>
+                                    <div>A few minutes</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className='ccContainer'>
+            <div className='scContainer'>
                 {
                     messageList && (<div>
                         {
